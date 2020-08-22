@@ -6,9 +6,7 @@
       </v-col>
       <v-col sm="6">
         <h1 class="display-1 mt-12">The Largest Business Expert</h1>
-        <p class="body-1 mt-8">These cases are perfectly simple and easy to distinguish. In a free hour,
-when our power of choice is untrammelled and when nothing prevents
-our being able to do what we like best.</p>
+        <p class="body-1 mt-8">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
       </v-col>
     </v-row>
 

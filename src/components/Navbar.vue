@@ -7,8 +7,8 @@
         <span three-line>Portfolio</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn depressed class="grey lighten-5">
-        <span>Download CV</span>
+      <v-btn @click="onClick()" depressed class="grey lighten-5" v-model="download">
+          <span>Download CV</span>
         <v-icon right color="grey lighten-1">mdi-file-document-outline</v-icon>
       </v-btn>
     </v-app-bar>
@@ -58,18 +58,20 @@
 
       <h3 class="grey--text caption ml-5">CHANGE MODE</h3>
 
-      <v-switch v-model="success" @click="success = false; " class="ml-5" ></v-switch>
+      <v-switch v-model="success" @click="success = false; " class="ml-5"></v-switch>
     </v-navigation-drawer>
   </nav>
 </template>
 
 <script>
+
 export default {
   name: "Navbar",
   data() {
     return {
       success: true,
       drawer: false,
+      download: 'https://drive.google.com/file/d/10zbPN2GTpUABonJbPLILucQJMcT-urvy/view?usp=sharing',
       menus: [
         { icon: "mdi-home", text: "About Me", route: '/' },
         { icon: "mdi-laptop", text: "Portfolio", route: '/Portfolio' },
@@ -84,8 +86,23 @@ export default {
         { icon: "mdi-youtube", icolor: "red" }
       ]
     };
+  },
+
+  methods: {
+    onClick() {
+      const fileLink = document.createElement('a');
+      fileLink.href = this.download;
+      fileLink.setAttribute('download', 'resume.pdf');
+      document.body.appendChild(fileLink);
+      fileLink.click();
+    }
   }
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="css" scoped>
+.text-decoration-none {
+  text-decoration: none;
+  color: grey;
+}
+</style>

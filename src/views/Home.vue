@@ -8,10 +8,10 @@
           <v-card-text>
             <p class="overline mb-4">Hey __________</p>
             <p class="display-1 mb-4">Boniface, Ikechukwu</p>
-            <v-list-item-subtitle class="title mb-2">Senior Software Developer</v-list-item-subtitle>
+            <v-list-item-subtitle class="title mb-2">Junior Software Developer</v-list-item-subtitle>
             <p
               class="body-1"
-            >I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on my blog. Want to know how I may help your project?</p>
+            >I'm a software Developer specialised in frontend and backend development for complex scalable web apps. I write about software development on my blog. Want to know how I may help your project?</p>
             <v-btn depressed tile color="grey grey--text text--lighten-3">Hire me</v-btn>
           </v-card-text>
         </v-col>
@@ -21,11 +21,11 @@
       </v-row>
     </v-card>
 
-<!-- what i do is start here -->
+<!-- what i do start here -->
     <div class="ml-12">
       <div class="line"></div>
       <h3 class="display-1 mt-12 mb-7 mx-3">What I Do</h3>
-      <p class="body-2">I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use.</p>
+      <p class="body-2">I have up to 2+ years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use.</p>
     </div>
 
     <v-row class="mx-12">
